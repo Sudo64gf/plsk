@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAMZA ROOT — Developer & Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- BACKGROUND ORBS -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- ═══════════════════════ NAV ═══════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">HAMZA<span>.</span>ROOT</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for work
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line-1">HAMZA</span>
+      <span class="line-2" data-text="ROOT">ROOT</span>
+    </h1>
+
+    <div class="hero-sub">
+      <p class="hero-desc">
+        I build intelligent systems, automate workflows, and craft digital experiences.
+        From AI bots to full-stack apps — I turn ideas into code.
+      </p>
+      <div class="hero-tags">
+        <div class="hero-tag">Python Developer</div>
+        <div class="hero-tag">Bot Engineer</div>
+        <div class="hero-tag">AI Builder</div>
+        <div class="hero-tag">Automation Expert</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <button class="btn-primary" data-scroll="projects">
+        <span>View Projects</span>
+      </button>
+      <button class="btn-secondary" data-scroll="contact">
+        Get In Touch
+      </button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TICKER ═══════════════════════ -->
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack">
+      <div class="ticker-item"><span class="ticker-dot"></span>Python</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Telegram Bots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Web Scraping</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Discord Bots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>REST APIs</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Automation</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>AI Tools</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Web Dev</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>FastAPI</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>OpenAI</div>
+      <!-- Duplicated for seamless loop -->
+      <div class="ticker-item"><span class="ticker-dot"></span>Python</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Telegram Bots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Web Scraping</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Discord Bots</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>REST APIs</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Automation</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>AI Tools</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>Web Dev</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>FastAPI</div>
+      <div class="ticker-item"><span class="ticker-dot"></span>OpenAI</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ STATS ═══════════════════════ -->
+  <div class="stats">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="50">0</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="20">0</div>
+      <div class="stat-label">Bots Deployed</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="5">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="100">0</div>
+      <div class="stat-label">% Committed</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section class="projects" id="projects">
+    <div class="section-label">Selected Work</div>
+    <div class="projects-header">
+      <h2 class="section-title reveal">Featured<br>Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Featured Project -->
+      <div class="project-card featured reveal">
+        <div class="project-info">
+          <div class="project-num">001 / Featured</div>
+          <h3 class="project-name">AI Telegram Bot</h3>
+          <p class="project-desc">
+            A fully automated Telegram bot powered by GPT-4. Handles conversations,
+            generates images, manages databases, and executes commands — all from a
+            single chat interface.
+          </p>
+          <div class="project-tags">
+            <span class="tag active">Python</span>
+            <span class="tag active">Telegram API</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="t-line"><span class="t-green">$</span> <span class="t-muted">python</span> bot.py</div>
+          <div class="t-line"><span class="t-purple">→</span> Bot started successfully</div>
+          <div class="t-line"><span class="t-green">✓</span> Connected to Telegram API</div>
+          <div class="t-line"><span class="t-green">✓</span> AI model loaded</div>
+          <div class="t-line"><span class="t-green">✓</span> Database initialized</div>
+          <div class="t-line"><span class="t-pink">▶</span> Listening for messages...<span class="cursor-blink"></span></div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <div class="project-num">002</div>
+        <h3 class="project-name">Web Scraper Suite</h3>
+        <p class="project-desc">
+          High-performance scraping tool with rotating proxies, CAPTCHA bypass,
+          and automated data export to Excel/JSON.
+        </p>
+        <div class="project-tags">
+          <span class="tag active">Python</span>
+          <span class="tag">Selenium</span>
+          <span class="tag">BeautifulSoup</span>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <div class="project-num">003</div>
+        <h3 class="project-name">Auto-Trading Bot</h3>
+        <p class="project-desc">
+          Cryptocurrency trading automation with real-time analysis, signal detection,
+          and risk management built in.
+        </p>
+        <div class="project-tags">
+          <span class="tag active">Python</span>
+          <span class="tag">Binance API</span>
+          <span class="tag">ML</span>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+  <section class="services" id="services">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-title reveal">Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🤖</div>
+        <div class="service-num">01</div>
+        <h3 class="service-name">Bot Development</h3>
+        <p class="service-desc">Telegram, Discord, WhatsApp bots with AI integration, custom commands, and automated workflows.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚡</div>
+        <div class="service-num">02</div>
+        <h3 class="service-name">Automation Tools</h3>
+        <p class="service-desc">Python scripts that save you hours. File management, API integrations, scheduled tasks, and data pipelines.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌐</div>
+        <div class="service-num">03</div>
+        <h3 class="service-name">Web Development</h3>
+        <p class="service-desc">Fast, modern websites and web apps. From landing pages to full-stack applications with backend APIs.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <div class="service-num">04</div>
+        <h3 class="service-name">Web Scraping</h3>
+        <p class="service-desc">Extract any data from any website. Smart scrapers that handle JavaScript, CAPTCHAs, and anti-bot protection.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🧠</div>
+        <div class="service-num">05</div>
+        <h3 class="service-name">AI Integration</h3>
+        <p class="service-desc">Add intelligence to your apps. GPT, image generation, speech recognition, and custom ML models.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔗</div>
+        <div class="service-num">06</div>
+        <h3 class="service-name">API Development</h3>
+        <p class="service-desc">Build and consume REST APIs. FastAPI, Flask backends with authentication, documentation, and deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-left">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="contact-title reveal">Let's Build<br>Together.</h2>
+      <p class="contact-sub reveal">Have a project in mind? I'm always open to discussing new ideas, custom builds, and collaborations.</p>
+      <div class="social-links reveal">
+        <a href="#" class="social-link" title="Telegram">TG</a>
+        <a href="#" class="social-link" title="GitHub">GH</a>
+        <a href="#" class="social-link" title="Discord">DC</a>
+        <a href="#" class="social-link" title="Twitter">TW</a>
+      </div>
+    </div>
+    <div class="contact-right reveal">
+      <div class="contact-form" id="contactForm">
+        <input type="text" class="form-input" placeholder="// Your name" id="nameInput">
+        <input type="email" class="form-input" placeholder="// Email address" id="emailInput">
+        <textarea class="form-input form-textarea" placeholder="// Tell me about your project..." id="msgInput"></textarea>
+        <button class="btn-primary" id="submitBtn">
+          <span>Send Message →</span>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <span class="t-green">✓</span> Message sent! I'll reply soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer>
+    <div class="footer-logo">HAMZA<span>.</span>ROOT</div>
+    <div class="footer-copy">© 2026 — Built with code & coffee</div>
+    <div class="footer-back-top" id="backToTop">↑ Top</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
